@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { Film, Tv, Sparkles, Loader2, ArrowUpDown } from 'lucide-react';
 import type { Movie, MediaType } from '../types/movie';
 import { api } from '../services/api';
-import { GENRES, ALL_COMBINED_MOVIES, TOP_10_HINDI_SERIES, ANIME_HITS, MORE_HINDI_MOVIES } from '../data/mockData';
+import { GENRES, TOP_10_HINDI_SERIES, ANIME_HITS, MORE_HINDI_MOVIES } from '../data/mockData';
 import { MovieCard } from '../components/common/MovieCard';
 import { MovieModal } from '../components/common/MovieModal';
 
