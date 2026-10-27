@@ -129,10 +129,6 @@ export const HomePage: React.FC = () => {
             PikaMovie does not host pirated media. Movie metadata and posters are provided by TMDB. Authorized streaming demos and licensed creative commons videos are provided for preview purposes.
           </p>
           <div className="flex items-center gap-4 text-slate-400 pt-2">
-            <a href="https://t.me/pikamoviein" target="_blank" rel="noreferrer" className="hover:text-[#ffd83a] transition-colors">
-              Telegram
-            </a>
-            <span>•</span>
             <span>Terms of Service</span>
             <span>•</span>
             <span>Privacy Policy</span>

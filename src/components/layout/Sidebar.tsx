@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import { Home, Search, Film, Tv, Sparkles, User, Send } from 'lucide-react';
+import { Home, Search, Film, Tv, Sparkles, User } from 'lucide-react';
 
 interface SidebarProps {
   onOpenSearch?: () => void;
@@ -86,21 +86,6 @@ export const Sidebar: React.FC<SidebarProps> = ({ onOpenSearch }) => {
             );
           })}
         </nav>
-
-        {/* Divider */}
-        <div className="w-8 h-px bg-white/10 my-4" />
-
-        {/* Telegram Link */}
-        <a
-          href="https://t.me/pikamoviein"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="Join Telegram Channel"
-          className="w-full py-2.5 px-1 rounded-xl flex flex-col items-center justify-center gap-1 text-slate-400 hover:text-[#0088cc] hover:bg-white/5 transition-all group"
-        >
-          <Send className="w-5 h-5 transition-transform group-hover:scale-110" />
-          <span className="text-[10px] tracking-tight">Telegram</span>
-        </a>
       </aside>
 
       {/* Mobile Bottom Navigation Bar */}
