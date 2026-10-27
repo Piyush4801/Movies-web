@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #08090b;
+  color: #ffffff;
+  font-family: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  background-color: #08090b;
+}
+
+/* Custom Hide Scrollbar for Horizontal Movie Tracks */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom Sleek Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #08090b;
+}
+::-webkit-scrollbar-thumb {
+  background: #252834;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3b3f52;
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(18, 20, 26, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-search {
+  background: rgba(22, 25, 34, 0.65);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.glass-search:hover {
+  border-color: rgba(255, 255, 255, 0.25);
+  background: rgba(28, 32, 44, 0.75);
+}
+
+/* Rank numbers styling (like Netflix / PikaMovie Top 10) */
+.rank-number {
+  font-size: 7rem;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: -6px;
+  color: #08090b;
+  -webkit-text-stroke: 4px #343b4f;
+  user-select: none;
+  font-family: 'Outfit', sans-serif;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.9);
+}
+
+@media (min-width: 768px) {
+  .rank-number {
+    font-size: 9rem;
+    -webkit-text-stroke: 5px #3a4259;
+  }
+}
+
+/* Cinematic Shading Overlays */
+.hero-gradient-overlay {
+  background: linear-gradient(
+    to top,
+    #08090b 0%,
+    rgba(8, 9, 11, 0.95) 15%,
+    rgba(8, 9, 11, 0.6) 40%,
+    rgba(8, 9, 11, 0.2) 70%,
+    rgba(8, 9, 11, 0.4) 100%
+  );
+}
+
+.hero-gradient-left {
+  background: linear-gradient(
+    to right,
+    #08090b 0%,
+    rgba(8, 9, 11, 0.85) 30%,
+    rgba(8, 9, 11, 0.4) 60%,
+    transparent 100%
+  );
+}
+
+/* Image Shading for Cards */
+.card-shade {
+  background: linear-gradient(
+    to top,
+    rgba(8, 9, 11, 0.95) 0%,
+    rgba(8, 9, 11, 0.4) 40%,
+    transparent 70%
+  );
+}

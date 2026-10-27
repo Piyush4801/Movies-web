@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: pikamovie
+    env: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: VITE_TMDB_API_KEY
+        value: 852b496a6ab5e48324fac3a942903058
