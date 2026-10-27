@@ -22,21 +22,18 @@ export const Sidebar: React.FC<SidebarProps> = ({ onOpenSearch }) => {
     <>
       {/* Desktop Fixed Left Sidebar */}
       <aside className="hidden md:flex fixed top-0 left-0 bottom-0 w-[78px] bg-[#090a0e]/90 backdrop-blur-xl border-r border-white/5 flex-col items-center py-5 z-40 select-none">
-        {/* PikaMovie Logo */}
+        {/* Movies.web Logo */}
         <NavLink 
           to="/" 
-          aria-label="PikaMovie home"
+          aria-label="Movies.web home"
           className="group flex flex-col items-center gap-1.5 mb-7 transition-transform hover:scale-105"
         >
-          {/* Pikachu-inspired Yellow Lightning Icon */}
           <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#ffd83a] to-[#ff9f0a] flex items-center justify-center shadow-glow-subtle group-hover:shadow-glow transition-all">
-            <svg width="22" height="22" viewBox="0 0 64 64" aria-hidden="true">
-              <path d="M36.5 10 18 35.5h12.2L26.5 54 46 27.5H33.6z" fill="#1a1205" />
-            </svg>
+            <Film className="w-5 h-5 text-black stroke-[2.5]" />
           </div>
-          <div className="text-[9px] font-black tracking-widest leading-none text-white flex flex-col items-center">
-            <span>PIKA</span>
-            <span className="text-[#ffd83a]">MOVIE</span>
+          <div className="text-[9px] font-black tracking-tight leading-none text-white flex flex-col items-center">
+            <span>MOVIES</span>
+            <span className="text-[#ffd83a]">.WEB</span>
           </div>
         </NavLink>
 

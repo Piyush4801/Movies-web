@@ -4,7 +4,7 @@ import type { Movie } from '../types/movie';
 import { HeroCarousel } from '../components/home/HeroCarousel';
 import { MovieRow } from '../components/common/MovieRow';
 import { MovieModal } from '../components/common/MovieModal';
-import { Loader2 } from 'lucide-react';
+import { Loader2, Film } from 'lucide-react';
 import {
   HERO_MOVIES,
   TOP_10_HINDI_MOVIES,
@@ -61,7 +61,7 @@ export const HomePage: React.FC = () => {
     return (
       <div className="w-full min-h-screen flex flex-col items-center justify-center bg-[#08090b] text-white">
         <Loader2 className="w-10 h-10 text-[#ffd83a] animate-spin mb-3" />
-        <p className="text-sm text-slate-400 font-medium">Loading PikaMovie...</p>
+        <p className="text-sm text-slate-400 font-medium">Loading Movies.web...</p>
       </div>
     );
   }
@@ -119,21 +119,19 @@ export const HomePage: React.FC = () => {
         <div className="flex flex-col items-center gap-3">
           <div className="flex items-center gap-2">
             <div className="w-6 h-6 rounded-lg bg-gradient-to-br from-[#ffd83a] to-[#ff9f0a] flex items-center justify-center">
-              <svg width="14" height="14" viewBox="0 0 64 64">
-                <path d="M36.5 10 18 35.5h12.2L26.5 54 46 27.5H33.6z" fill="#1a1205" />
-              </svg>
+              <Film className="w-3.5 h-3.5 text-black stroke-[2.5]" />
             </div>
-            <span className="font-extrabold text-white text-sm tracking-wider">PIKA<span className="text-[#ffd83a]">MOVIE</span></span>
+            <span className="font-extrabold text-white text-sm tracking-wider">MOVIES<span className="text-[#ffd83a]">.WEB</span></span>
           </div>
           <p className="max-w-md text-slate-400">
-            PikaMovie does not host pirated media. Movie metadata and posters are provided by TMDB. Authorized streaming demos and licensed creative commons videos are provided for preview purposes.
+            Movies.web does not host pirated media. Movie metadata and posters are provided by TMDB. Authorized streaming demos and licensed creative commons videos are provided for preview purposes.
           </p>
           <div className="flex items-center gap-4 text-slate-400 pt-2">
             <span>Terms of Service</span>
             <span>•</span>
             <span>Privacy Policy</span>
           </div>
-          <p className="text-slate-600 mt-2">© 2026 PikaMovie. Built with React &amp; Tailwind CSS.</p>
+          <p className="text-slate-600 mt-2">© 2026 Movies.web. All rights reserved.</p>
         </div>
       </footer>
 
